@@ -1,0 +1,27 @@
+{
+  "name": "sportcarrent",
+  "version": "1.0.0",
+  "description": "SportCarRent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pazikbartek/SportCarRent.git"
+  },
+  "author": "Bartosz Pazik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pazikbartek/SportCarRent/issues"
+  },
+  "homepage": "https://github.com/pazikbartek/SportCarRent#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
