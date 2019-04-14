@@ -1,2 +1,5 @@
-console.log("its working")
-console.log('hello')
+import Slider from "./slider.js";
+
+let slider = new Slider();
+slider.addListenerRight();
+slider.addListenerLeft();

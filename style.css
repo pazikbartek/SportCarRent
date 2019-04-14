@@ -20,6 +20,7 @@ nav div{
     background-image: url(descriptionbgr.jpg);
     background-size: cover;
     min-height:50vh;
+    text-align: center;
 }
 #description div{
     background-color: rgba(100,100,100,0.7);
@@ -28,4 +29,53 @@ nav div{
     padding-top:30vh;
     color:white;
     font-size:4vw;
+}
+#offers{
+    text-align:center;
+    min-height:100vh;
+    margin-bottom:3vh;
+}
+.car{
+    min-height:50vh;
+    border: 0.2vw solid rgb(90, 90, 90);
+    margin: 8vh 0 0 0;
+    background-color: lightblue;
+    display:flex;
+}
+.car:nth-child(odd){
+    margin-right:10vw;
+    margin-left: 3vw;
+}
+.car:nth-child(even){
+    margin-left:10vw;
+    margin-right: 3vw;
+}
+.slider{
+    width:45vw;
+    border:0.1vw solid black;
+    margin: 1vh 2vw 1vh 0.5vw;
+    min-height:38vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:3vw;
+}
+.slider i:hover{
+    cursor:pointer;
+}
+.car:nth-child(3) .slider{
+    background-image: url(porscheprzod.jpg); 
+    background-size: cover;
+    /* animation: color 1s; */
+}
+.data{
+    width:40vw;
+    border:0.1vw solid black;
+    margin: 1vh 0.5vw 1vh 2vw;
+    min-height:38vh;
+}
+
+@keyframes changePhoto{
+    from {background-image: url(porscheprzod.jpg);}
+    to {background-image: url(descriptionbgr.jpg)}
 }

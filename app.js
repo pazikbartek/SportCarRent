@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"its working\");\nconsole.log('hello');\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider.js */ \"./src/slider.js\");\n\n\nlet slider = new _slider_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nslider.addListenerRight();\nslider.addListenerLeft();\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/slider.js":
+/*!***********************!*\
+  !*** ./src/slider.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nclass Slider {\n\n    addListenerRight() {\n\n        const a = document.querySelectorAll('.fas.fa-angle-double-right');\n        a.forEach(el => {\n            el.addEventListener(\"click\", e => {\n                e.target.parentElement.style.backgroundColor = \"red\";\n            });\n        });\n    }\n\n    addListenerLeft() {\n\n        const a = document.querySelectorAll('.fas.fa-angle-double-left');\n        a.forEach(el => {\n            el.addEventListener(\"click\", e => {\n                e.target.parentElement.style.backgroundColor = \"blue\";\n            });\n        });\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Slider);\n\n//# sourceURL=webpack:///./src/slider.js?");
 
 /***/ })
 
