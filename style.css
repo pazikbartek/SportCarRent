@@ -17,7 +17,7 @@ nav div{
     margin: 0 1vw 0 0;
 }
 #description{
-    background-image: url(descriptionbgr.jpg);
+    background-image: url('./photos/descriptionbgr.jpg');
     background-size: cover;
     min-height:50vh;
     text-align: center;
@@ -58,15 +58,37 @@ nav div{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    font-size:3vw;
+    font-size:3.5vw;
+    color:white;
 }
-.slider i:hover{
+.fas.fa-angle-double-left{
+    opacity:0.5; 
+    background-color:rgba(56, 56, 56, 0.4)
+}
+.fas.fa-angle-double-right{
     cursor:pointer;
+    background-color:rgba(56, 56, 56, 0.4)
+}
+
+.car:nth-child(1) .slider{
+    background-image: url('./photos/porscheprzod.jpg'); 
+    background-size: cover;
+}
+.car:nth-child(2) .slider{
+    background-image: url('./photos/mustangprzod.jpg'); 
+    background-size: cover;
 }
 .car:nth-child(3) .slider{
-    background-image: url(porscheprzod.jpg); 
+    background-image: url('./photos/lamboprzod.jpg'); 
     background-size: cover;
-    /* animation: color 1s; */
+}
+.car:nth-child(4) .slider{
+    background-image: url('./photos/mercprzod.jpg'); 
+    background-size: cover;
+}
+.car:nth-child(5) .slider{
+    background-image: url('./photos/ferrariprzod.jpg'); 
+    background-size: cover;
 }
 .data{
     width:40vw;
@@ -76,6 +98,7 @@ nav div{
 }
 
 @keyframes changePhoto{
-    from {background-image: url(porscheprzod.jpg);}
-    to {background-image: url(descriptionbgr.jpg)}
+    0% {opacity:1}
+    50% {opacity:0}
+    100%{opacity:1}
 }
