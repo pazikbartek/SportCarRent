@@ -5,61 +5,86 @@ body{
 .menu{
     display:flex;
     justify-content: space-between;
-    background-color:grey;
-    padding: 2vh 1vw 1vw 2vh;
-    min-height:10vh;
+    color: white;
+    background-color: black;
+}
+.logo{
+    font-size:3.5vw;
+    padding: 4vh 0 0 2vw;
+    font-family: 'Righteous', cursive;
 }
 nav{
     display:flex;
     justify-content: space-between;
+    font-size:2.3vw;
+    min-height:17vh;
+    font-family: 'Rubik', sans-serif;
 }
 nav div{
-    margin: 0 1vw 0 0;
+    cursor: pointer;
+    padding:5vh 0 0 0;
+    margin: 0 2vw 0 0;
+}
+nav div:hover{
+    color:orange;
 }
 #description{
     background-image: url('./photos/descriptionbgr.jpg');
     background-size: cover;
-    min-height:50vh;
+    min-height:53vh;
     text-align: center;
 }
 #description div{
     background-color: rgba(100,100,100,0.7);
     width:100%;
-    min-height:50vh;
+    min-height:53vh;
     padding-top:30vh;
     color:white;
     font-size:4vw;
 }
 #offers{
     text-align:center;
-    min-height:100vh;
+    /* min-height:100vh; */
     margin-bottom:3vh;
+    color:rgb(34, 34, 34);
+    font-size:2.3vw;
+    font-family: 'Righteous', cursive;
+}
+#offers h1{
+    width:100%;
+    border-bottom: 0.2vw solid black;
+    margin:3vh 0 3vh 0;
+    padding: 0 0 3vh 0;
 }
 .car{
-    min-height:50vh;
-    border: 0.2vw solid rgb(90, 90, 90);
+    min-height:55vh;
     margin: 8vh 0 0 0;
-    background-color: lightblue;
     display:flex;
+    border-radius: 10%;
 }
 .car:nth-child(odd){
-    margin-right:10vw;
-    margin-left: 3vw;
+    margin-right:2vw;
+    margin-left: 6vw;
 }
 .car:nth-child(even){
-    margin-left:10vw;
-    margin-right: 3vw;
+    margin-left:2vw;
+    margin-right: 6vw;
+}
+.car:nth-child(odd) .data{
+    background-color: rgb(250, 250, 250);
+}
+.car:nth-child(even) .data{
+    background-color:rgb(233, 233, 233);
 }
 .slider{
     width:45vw;
-    border:0.1vw solid black;
-    margin: 1vh 2vw 1vh 0.5vw;
     min-height:38vh;
     display:flex;
     justify-content: space-between;
     align-items: center;
     font-size:3.5vw;
     color:white;
+
 }
 .fas.fa-angle-double-left{
     opacity:0.5; 
@@ -70,33 +95,55 @@ nav div{
     background-color:rgba(56, 56, 56, 0.4)
 }
 
-.car:nth-child(1) .slider{
+.car:nth-child(2) .slider{
     background-image: url('./photos/porscheprzod.jpg'); 
     background-size: cover;
 }
-.car:nth-child(2) .slider{
+.car:nth-child(3) .slider{
     background-image: url('./photos/mustangprzod.jpg'); 
     background-size: cover;
 }
-.car:nth-child(3) .slider{
+.car:nth-child(4) .slider{
     background-image: url('./photos/lamboprzod.jpg'); 
     background-size: cover;
 }
-.car:nth-child(4) .slider{
+.car:nth-child(5) .slider{
     background-image: url('./photos/mercprzod.jpg'); 
     background-size: cover;
 }
-.car:nth-child(5) .slider{
+.car:nth-child(6) .slider{
     background-image: url('./photos/ferrariprzod.jpg'); 
     background-size: cover;
 }
 .data{
-    width:40vw;
-    border:0.1vw solid black;
-    margin: 1vh 0.5vw 1vh 2vw;
+    width:42vw;
     min-height:38vh;
+    padding: 3vh 0 0 2vw;
+    text-align:left;
+    font-size:2vw;
+    font-family: 'Rubik', sans-serif;
+    line-height: 6vh;
+    margin: 0 0 0 2vw;
+    border-radius:10%;
+}
+.data h2{
+    font-size:3.5vw;
+    margin:0;
+    text-align:center;
+    color:orange;
+    font-family: 'Righteous', cursive;
+    width:40vw;
 }
 
+#contact{
+    margin: 10vh 0 0 0;
+    min-height:40vh;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    border-top: 0.2vw solid black;
+    padding-top:10vh;
+    font-size: 2vw;
+}
 @keyframes changePhoto{
     0% {opacity:1}
     50% {opacity:0}
