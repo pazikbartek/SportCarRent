@@ -90,23 +90,10 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider.js */ \"./src/slider.js\");\n\n\nlet slider = new _slider_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nslider.addListenerRight();\nslider.addListenerLeft();\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/slider.js":
-/*!***********************!*\
-  !*** ./src/slider.js ***!
-  \***********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass Slider {\n    constructor() {\n        this.rightPhoto = [['url(./photos/porschetyl.jpg)', false], ['url(./photos/mustangtyl.jpg)', false], ['url(./photos/lambotyl.jpg)', false], ['url(./photos/merctyl.jpg)', false], ['url(./photos/ferrarityl.jpg)', false]];\n        this.leftPhoto = ['url(./photos/porscheprzod.jpg)', 'url(./photos/mustangprzod.jpg)', 'url(./photos/lamboprzod.jpg)', 'url(./photos/mercprzod.jpg)', 'url(./photos/ferrariprzod.jpg)'];\n    }\n\n    addListenerRight() {\n        const a = document.querySelectorAll('.fas.fa-angle-double-right');\n\n        a.forEach((el, index) => {\n            el.addEventListener(\"click\", e => {\n                if (this.rightPhoto[index][1] === false) {\n                    e.target.parentElement.style.animation = \"changePhoto 0.2s\";\n                    setTimeout(() => {\n                        e.target.parentElement.style.backgroundImage = this.rightPhoto[index][0];\n                        e.target.parentElement.style.animation = \"none\";\n                        this.rightPhoto[index][1] = true;\n                        e.target.style.opacity = \"0.5\";\n                        e.target.style.cursor = \"default\";\n                        e.target.previousElementSibling.style.opacity = \"1\";\n                        e.target.previousElementSibling.style.cursor = \"pointer\";\n                    }, 100);\n                }\n            });\n        });\n    }\n\n    addListenerLeft() {\n        const a = document.querySelectorAll('.fas.fa-angle-double-left');\n\n        a.forEach((el, index) => {\n            el.addEventListener(\"click\", e => {\n                if (this.rightPhoto[index][1]) {\n                    e.target.parentElement.style.animation = \"changePhoto 0.2s\";\n                    setTimeout(() => {\n                        e.target.parentElement.style.backgroundImage = this.leftPhoto[index];\n                        e.target.parentElement.style.animation = \"none\";\n                        this.rightPhoto[index][1] = false;\n                        e.target.style.opacity = \"0.5\";\n                        e.target.style.cursor = \"default\";\n                        e.target.nextElementSibling.style.opacity = \"1\";\n                        e.target.nextElementSibling.style.cursor = \"pointer\";\n                    }, 100);\n                }\n            });\n        });\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Slider);\n\n//# sourceURL=webpack:///./src/slider.js?");
+eval("\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
