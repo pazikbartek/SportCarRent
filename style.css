@@ -177,6 +177,10 @@ nav div:hover{
     font-size:0.7vw;
 
 }
+footer{
+    color:white;
+    font-size:3vw;
+}
 @keyframes changePhoto{
     0% {opacity:1}
     50% {opacity:0}
