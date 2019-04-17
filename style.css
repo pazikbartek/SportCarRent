@@ -1,7 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin:0;
     padding:0;
     background-color: rgb(31, 31, 31);
+}
+a{
+    text-decoration:none;
+    color:white;
 }
 .menu{
     display:flex;
@@ -59,7 +66,7 @@ nav div:hover{
 #offers{
     text-align:center;
     color:rgb(34, 34, 34);
-    font-size:1.8vw;
+    font-size:2.3vw;
     font-family: 'Righteous', cursive;
     background-color: rgba(100,100,100,0.8);
     min-height:370vh;
@@ -68,9 +75,9 @@ nav div:hover{
     width:100%;
     border-bottom: 0.1vw solid rgb(170, 170, 170);
     margin:0 0 3vh 0;
-    padding: 3vh 0 3vh 0;
+    padding: 17vh 0 10vh 0;
     color:white;
-    letter-spacing: 0.15vw;
+    letter-spacing: 0.2vw;
 }
 .car{
     min-height:35vh;
