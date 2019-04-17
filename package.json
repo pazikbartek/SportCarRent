@@ -21,6 +21,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "exports-loader": "^0.7.0",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
   },

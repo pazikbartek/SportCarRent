@@ -17,6 +17,12 @@ module.exports = {
                 loaders: ['babel-loader'],
                 exclude: /node_modules/,
             },
+            {
+                test: require.resolve('wowjs/dist/wow.min.js'), 
+                loader: 'exports?this.WOW'
+             }
         ]
-    }
+    },
+    
 };
+
