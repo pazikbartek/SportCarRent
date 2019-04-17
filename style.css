@@ -13,12 +13,13 @@ a{
 .menu{
     display:flex;
     justify-content: space-between;
+    align-items:center;
     color: white;
     background-color: rgb(31, 31, 31);
 }
 .logo{
-    font-size:3.5vw;
-    padding: 4vh 0 0 3vw;
+    font-size:3.7vw;
+    padding: 0 0 0 3vw; 
     font-family: 'Righteous', cursive;
     color:orange;
 }
@@ -28,10 +29,11 @@ nav{
     font-size:2.3vw;
     min-height:17vh;
     font-family: 'Rubik', sans-serif;
+    align-items: center;
 }
 nav div{
     cursor: pointer;
-    margin: 5vh 2vw 0 0;
+    margin: 0 2vw 0 0;
     height:6vh;
 }
 nav div:hover{
@@ -49,13 +51,24 @@ nav div:hover{
     min-height:71vh;
     padding-top:12vh;
     color:white;
-    font-size:vw;
     font-family: 'Rubik', sans-serif;
     font-size: 2.1vw;
+}
+.checkoffer{
+    margin-top:3vh;
+    padding-top:3vh;
+    border-top:0.1vw solid rgb(170, 170, 170);
+    font-size:3.8vw;
+    width:100%;
+    font-family:'Righteous',cursive;
+    display:block;
 }
 .fas.fa-arrow-circle-down{
     font-size: 3.5vw;
     margin-top:2vh;
+}
+.fas.fa-arrow-circle-down:hover{
+    color:orange;
 }
 .bgrphoto{
     background-image: url('./photos/tlo.jpg');
@@ -81,12 +94,16 @@ nav div:hover{
 }
 .car{
     min-height:35vh;
-    margin: 10vh 0 0 0;
+    margin: 20vh 0 0 0;
     display:flex;
     padding-bottom:5vh;
     border-bottom: 0.1vw solid orange;
     position: static;
 }
+.car:nth-child(2){
+    margin: 10vh 0 0 0;
+}
+
 .car:nth-child(odd){
     margin-right:2vw;
     margin-left: 23vw;
@@ -178,18 +195,255 @@ nav div:hover{
     font-size:5vw;
 }
 .fab.fa-instagram{
-    color:rgb(204, 78, 116)
+    color:rgb(202, 56, 100)
 }
 .fas.fa-circle{
     font-size:0.7vw;
-
 }
 footer{
-    color:white;
-    font-size:3vw;
+    color:rgb(170, 170, 170);
+    font-size:1.2vw;
+    text-align: center;
 }
 @keyframes changePhoto{
     0% {opacity:1}
     50% {opacity:0}
     100%{opacity:1}
+}
+
+@media screen and (max-width: 1100px) {
+    .logo{
+        font-size:4.2vw;
+    }
+    nav{
+        font-size:2.7vw;
+    }
+    #description div{
+        padding-top:15vh;
+        font-size: 2.4vw;
+    }
+    .checkoffer{
+        padding-top:5vh;
+        font-size:4.5vw;
+    }
+    .fas.fa-arrow-circle-down{
+        font-size: 3.8vw;
+    }
+    #offers{
+        font-size:2.6vw;
+    }
+    .car:nth-child(odd){
+        margin-right:0;
+        margin-left: 0;
+    }
+    .car:nth-child(even){
+        margin-left:0;
+        margin-right: 0;
+    }
+    .car:nth-child(2) .slider{
+        background-image: url('./photosrwd/porscheprzodrwd.png'); 
+    }
+    .car:nth-child(3) .slider{
+        background-image: url('./photosrwd/mustangprzodrwd.png'); 
+    }
+    .car:nth-child(4) .slider{
+        background-image: url('./photosrwd/lamboprzodrwd.png'); 
+    }
+    .car:nth-child(5) .slider{
+        background-image: url('./photosrwd/mercprzodrwd.png'); 
+    }
+    .car:nth-child(6) .slider{
+        background-image: url('./photosrwd/ferrariprzodrwd.png'); 
+    }
+    .car{
+        margin: 5vh 0 0 0;
+    }
+    .slider{
+        width:45vw; 
+    }
+    .data{
+        width:50vw;
+    }
+  }
+
+  
+@media screen and (max-width: 880px) {
+    .logo{
+        font-size:4.5vw;
+    }
+    nav{
+        font-size:2.9vw;
+    }
+    nav div{
+        margin: 2vh 2vw 0 0;
+    }
+    #description div{
+        padding-top:20vh;
+        font-size: 2.5vw;
+    }
+    .checkoffer{
+        padding-top:8vh;
+        font-size:4.7vw;
+    }
+    .fas.fa-arrow-circle-down{
+        font-size: 4vw;
+    }
+    .car{
+        margin: 5vh 0 0 0;
+    }
+    .slider{
+        margin-top:7vh;
+        width:58vw; 
+    }
+    .data{
+        width:37vw;
+        font-size:2.3vw;
+    }
+    .data h2{
+        font-size:3.5vw;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .logo{
+        font-size:5vw;
+    }
+    nav{
+        font-size:3.2vw;
+        min-height:13vh;
+    }
+    #description div{
+        padding-top:20vh;
+        font-size: 2.8vw;
+    }
+    #offers{
+        min-height:320vh;
+    }
+    .checkoffer{
+        font-size:5vw;
+    }
+    .fas.fa-arrow-circle-down{
+        font-size: 5vw;
+    }
+    .car{
+        margin: 2vh 0 0 0;
+    }
+    .car:nth-child(2){
+        margin: 5vh 0 0 0;
+    }
+    .slider{
+        margin-top:5vh;
+    }
+    .data{
+        width:37vw;
+        font-size:2.6vw;
+        line-height: 4vh;
+    }
+    .data h2{
+        font-size:4.7vw;
+    }
+
+  }
+
+  @media screen and (max-width: 430px) { 
+        .logo{
+            font-size:5.5vw;
+        }
+        nav{
+            font-size:3.6vw;
+            min-height:10vh;
+        }
+        #description div{
+            font-size: 3vw;
+        }
+        .checkoffer{
+            font-size:5.7vw;
+        }
+        .fas.fa-arrow-circle-down{
+            font-size: 5.7vw;
+        }
+    
+        #offers{
+            font-size:3.4vw;
+            min-height:280vh;
+        }
+        .car:nth-child(2){
+            margin: 0 0 0 0;
+        }
+        .slider{
+            width:55vw;
+            padding-bottom:10vh;
+        }
+        .data{
+            width:40vw;
+            font-size:2.8vw;
+            line-height: 3.7vh;
+        }
+        .data h2{
+            font-size:5.2vw;
+        }
+
+    .car:nth-child(2) .slider{
+        background-image: url('./photosrwd2/porscheprzodrwd2.png'); 
+    }
+    .car:nth-child(3) .slider{
+        background-image: url('./photosrwd2/mustangprzodrwd2.png'); 
+    }
+    .car:nth-child(4) .slider{
+        background-image: url('./photosrwd2/lamboprzodrwd2.png'); 
+    }
+    .car:nth-child(5) .slider{
+        background-image: url('./photosrwd2/mercprzodrwd2.png'); 
+    }
+    .car:nth-child(6) .slider{
+        background-image: url('./photosrwd2/ferrariprzodrwd2.png'); 
+    }
+
+  }
+
+
+  @media screen and (max-width: 310px) { 
+    .logo{
+        font-size:5.5vw;
+    }
+    nav{
+        font-size:3.6vw;
+        min-height:10vh;
+    }
+    #description div{
+        font-size: 3vw;
+    }
+    .checkoffer{
+        font-size:5.7vw;
+    }
+    .fas.fa-arrow-circle-down{
+        font-size: 5.7vw;
+    }
+
+    #offers{
+        font-size:3.4vw;
+        min-height:280vh;
+    }
+    .car:nth-child(2){
+        margin: 0 0 0 0;
+    }
+    .car{
+        margin:0;
+    }
+    .slider{
+        width:55vw;
+        padding-bottom:0;
+        margin-top:7vh;
+    }
+    .data{
+        width:40vw;
+        font-size:2.8vw;
+        line-height: 3vh;
+        margin:0;
+        padding:0;
+    }
+    .data h2{
+        font-size:5.2vw;
+    }
+
 }
