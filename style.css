@@ -74,7 +74,6 @@ nav div:hover{
     background-image: url('./photos/tlo.jpg');
     background-attachment: fixed;
     background-size: cover;
-
 }
 #offers{
     text-align:center;
@@ -312,6 +311,9 @@ footer{
     nav{
         font-size:3.2vw;
         min-height:13vh;
+    }
+    .bgrphoto{
+        background-image: url('./photosrwd/tlorwd.jpg');
     }
     #description div{
         padding-top:20vh;
